@@ -1,0 +1,80 @@
+<?php
+// MOHAMED HASSANIN (KAPAKA)
+
+return [
+    'enabled' => env('SECURITY_HEADERS_ENABLED', true),
+    'hsts' => [
+        'enabled' => env('SECURITY_HSTS_ENABLED', true),
+        'max_age' => env('SECURITY_HSTS_MAX_AGE', 31536000),
+        'include_subdomains' => env('SECURITY_HSTS_SUBDOMAINS', true),
+        'preload' => env('SECURITY_HSTS_PRELOAD', false),
+    ],
+    'csp' => [
+        'enabled' => env('CSP_ENABLED', true),
+        'report_only' => env('CSP_REPORT_ONLY', false),
+        'directives' => [
+            'default-src' => ["'self'"],
+            'base-uri' => ["'self'"],
+            'form-action' => ["'self'"],
+            'frame-ancestors' => ["'self'"],
+            'script-src' => [
+                "'self'",
+                "'unsafe-inline'",
+                'https://cdn.jsdelivr.net',
+                'https://js.hcaptcha.com',
+                'https://challenges.cloudflare.com',
+                'https://widget.intercom.io',
+                'https://js.intercomcdn.com',
+                'https://client.crisp.chat',
+                'https://assets.calendly.com',
+            ],
+            'style-src' => [
+                "'self'",
+                "'unsafe-inline'",
+                'https://cdn.jsdelivr.net',
+                'https://fonts.bunny.net',
+                'https://assets.calendly.com',
+            ],
+            'img-src' => [
+                "'self'",
+                'data:',
+                'https:',
+            ],
+        'font-src' => [
+            "'self'",
+            'https://cdn.jsdelivr.net',
+            'https://fonts.bunny.net',
+            'data:',
+        ],
+            'frame-src' => [
+                "'self'",
+                'https://challenges.cloudflare.com',
+                'https://js.hcaptcha.com',
+                'https://www.hcaptcha.com',
+                'https://calendly.com',
+                'https://assets.calendly.com',
+                'https://client.crisp.chat',
+                'https://widget.intercom.io',
+            ],
+            'connect-src' => [
+                "'self'",
+                'https://client.crisp.chat',
+                'https://api.hcaptcha.com',
+                'https://challenges.cloudflare.com',
+                'https://api.telegram.org',
+                'https://hooks.slack.com',
+                'https://api.mailchimp.com',
+                'https://api.sendinblue.com',
+                'wss://client.crisp.chat',
+            ],
+        ],
+    ],
+    'headers' => [
+        'x_content_type_options' => 'nosniff',
+        'x_frame_options' => 'SAMEORIGIN',
+        'referrer_policy' => 'strict-origin-when-cross-origin',
+        'permissions_policy' => 'camera=(), microphone=(), geolocation=(), payment=()',
+        'cross_origin_opener_policy' => 'same-origin',
+        'cross_origin_resource_policy' => 'same-site',
+    ],
+];
