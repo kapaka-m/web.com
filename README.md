@@ -26,8 +26,6 @@ Multilingual portfolio CMS built with Laravel 12 + React (Inertia). RTL/LTR read
 5. `git remote add origin YOUR_REPO_URL`
 6. `git push -u origin main`
 
-> Tip: Do not upload `.env`. Use `.env.example` instead.
-
 ## English
 
 ### Project Summary
