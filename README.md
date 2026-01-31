@@ -8,15 +8,19 @@ Bootstrap 5, and Tailwind. RTL/LTR ready.
 ## GitHub Ready Pack
 
 ### Repository Description (EN)
+
 Multilingual portfolio CMS built with Laravel 12 + React (Inertia). RTL/LTR ready, blog, projects, services, and a full admin panel with SEO tools.
 
 ### وصف المستودع (AR)
+
 منصة بورتفوليو متعددة اللغات مبنية بـ Laravel 12 وReact (Inertia). تدعم RTL/LTR وبها مدونة ومشاريع وخدمات ولوحة تحكم كاملة مع أدوات SEO.
 
 ### Suggested Topics
+
 `laravel` `react` `inertiajs` `portfolio` `cms` `bootstrap` `tailwind` `rtl` `multilingual` `seo`
 
 ### Upload Steps
+
 1. `git init`
 2. `git add .`
 3. `git commit -m "Initial commit"`
